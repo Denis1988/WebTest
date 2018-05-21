@@ -1,3 +1,36 @@
+div.user{
+  height:100px;
+  width: 300px;
+  color: green;
+  border-style: solid;
+  border-width: medium;
+  border-color: blue;
+}
 #users{
-  color: Red;
+  float: left;
+  height: auto;
+  width: 310px;
+  border-style: double;
+  border-width: thin;
+  border-color: red;
+}
+#chat{
+  border-style: double;
+  border-width: thin;
+  border-color: black;
+  width: 800px;
+  height: 700px;
+  display: inline;
+  
+}
+div.chatMessages{
+
+}
+body{
+display: flex;
+}
+#inputMessage{
+  width: auto;
+  height: 100px;
+
 }
