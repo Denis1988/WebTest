@@ -6,26 +6,31 @@
 <title>Page Title</title>
 </head>
 <body>
-<table>
 
-<tr>
+
   <div id="users">
-    <h1>{{ title }}</h1>
+    <!--the user List-->
+    <div v-for="user in user" class="user">
+      {{user.name}} from IP {{user.ip}}
+      <br>
+      {{user.lastConnectedTime}} {{user.lastMessage}}
+    </div>
 
   </div>
-</tr>
-<tr>
   <div id="chat" >
-    <h1>{{ title }}</h1>
+    <!--all the messages-->
+    <div v-for="message in message" class="chatMessages">
+      {{message.time}} ==>> {{message.text}}
+    </div>
+    <div id="inputMessage">
+      <!--input messages -->
+      <h1>{{title}}</h1>
+    </div>
   </div>
-  <div id="inputMessage">
-    <h1>{{title}}</h1>
-  </div>
-</tr>
+
 
 
 <script src="app.js"></script>
 
-</table>
 </body>
 </html>
